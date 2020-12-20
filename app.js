@@ -23,29 +23,26 @@ function sleep(milliseconds) {
   }
   
 
-function generateArrays(){
-    for(i = 0; i < 200; i++){
+
+function configureArrays(){
+    for(x = 0; x < array.length; x++){
+        document.getElementsByClassName("rectangle")[0].remove();
+    }
+    array = []; 
+    for(i = 0; i < size_div.value; i++){
         let elem = document.createElement('div');
         elem.classList.add('rectangle'); 
         document.getElementById("arrays").appendChild(elem); 
         array.push(elem);
-    }
-}
-
-function configureArrays(){
-    for(i = 0; i < size_div.value; i++){
-        array[i].style.visibility = "visible";
-        let randomHeight = Math.random() * 49 * (1-document.getElementById("sortedness").value)/1
-                         + document.getElementById("sortedness").value/1 * 49 * (i / (size_div.value-1)) + 3;
+        let randomHeight = Math.random() * 98 * (10-document.getElementById("sortedness").value)/10
+                         + document.getElementById("sortedness").value/10 * 98 * (i / (size_div.value-1)) + 3;
         array[i].style.height =  randomHeight + "%"; 
         array[i].style.backgroundColor = "white";
     }
-    for(i = size_div.value; i < 200; i++){
-        array[i].style.visibility = "hidden";
-    }
+   
     size = size_div.value; 
-    for(i = 0; i < 200; i++){
-        var x = 60/size; 
+    for(i = 0; i < size; i++){
+        let x = 55/size ;
         document.getElementsByClassName("rectangle")[i].style.width = x + "%"; 
     }
 }
@@ -556,7 +553,6 @@ function sort(){
 function main(){
     
     algorithmChosen.style.color = "blue";
-    generateArrays(); 
     configureArrays(); 
     generate_div.addEventListener('click', function(){
         running = false; 
