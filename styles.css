@@ -50,7 +50,7 @@ header {
 
 #sizeSlider, #sortSlider, #generate, #speedSlider, #sort{
     display: inline-block;
-    padding-left: 1vmax;
+    padding-left: .8vmax;
 } 
 
 #speedSlider{
@@ -63,7 +63,7 @@ header {
 }
 
 .slider{
-    width: 8vmax;
+    width: 7vmax;
 
 }
 
@@ -100,7 +100,7 @@ header {
 #arrays{    
     width: 100%;
     position: absolute;
-    top: 18vmax;
+    top: 18.2vmax;
     bottom: 3%;
     text-align: center;
 
