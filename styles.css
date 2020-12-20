@@ -7,22 +7,24 @@
 
 body {
     background-color: #484848;
-    height: 100%;
+     
 }
 
 header { 
     background-color:lightskyblue; 
     text-align: center;
-    padding: 20px;
-    font-size: 23px;
+    padding: 1.3vmax;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.3vmax;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
 .name {
-    margin-top: .5%;
+    margin-top: .2vmax;
     display: inline-block; 
-    margin-left: 1%;
+    margin-left: .5vmax;
 }
 
 #link{
@@ -38,25 +40,31 @@ header {
 }
 
 .settings{
+    position: relative;
     text-align: center;
-    padding: 1%;
+    padding: .7vmax 0vmax 1vmax 0vmax;
     background-color: aliceblue; 
-    font-size: 20px;
+    font-size: 1.2vmax;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #sizeSlider, #sortSlider, #generate, #speedSlider, #sort{
     display: inline-block;
-    padding-left: 1%;
+    padding-left: 1vmax;
 } 
 
 #speedSlider{
-    padding-left: 10%;
+    padding-left: 8vmax;
 }
 
 #generate, #sort{
-    font-size: 24px;
-    
+    font-size: 1.3vmax;
+    font-weight: 600;
+}
+
+.slider{
+    width: 8vmax;
+
 }
 
 .slider:hover {
@@ -69,18 +77,16 @@ header {
 }
 
 .algorithms{
-    background-color: lightpink;  
+    background-color:#ffcbd3;
     text-align: center;
 }
 
 .algorithm{
-    margin: 1%;
+    margin: .9vmax;
     display: inline-block;
-    font-size: 23px;  
+    font-size: 1.2vmax;  
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
 
 .algorithm:hover{
     cursor: pointer; 
@@ -91,17 +97,23 @@ header {
     color: blue;
 }
 
-#arrays{
-    padding-left: 21%;
-    height: 33vw;
-    margin-top: 2%;
+#arrays{    
+    width: 100%;
+    position: absolute;
+    top: 18vmax;
+    bottom: 3%;
+    text-align: center;
+
 }
 
 .rectangle {
+
     display: inline-block; 
-    margin: 1px;  
+    margin-right: 1px;  
     width: .7%;
     background-color: black; 
+
+ 
     
 }
 
