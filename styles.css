@@ -7,6 +7,7 @@
 
 body {
     background-color: #484848;
+    height: 100%;
 }
 
 header { 
@@ -16,6 +17,24 @@ header {
     font-size: 23px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
+
+.name {
+    margin-top: .5%;
+    display: inline-block; 
+    margin-left: 1%;
+}
+
+#link{
+    color: black;
+}
+#link:hover{
+    cursor: pointer; 
+    color:blue; 
+}
+
+#link:active{
+    color:blue; 
 }
 
 .settings{
@@ -73,16 +92,16 @@ header {
 }
 
 #arrays{
-    height: 110vh;
+    padding-left: 21%;
+    height: 33vw;
     margin-top: 2%;
-    margin-left: 20%;
-    
 }
 
 .rectangle {
     display: inline-block; 
-    margin: 1px; 
-    width: .6%;
+    margin: 1px;  
+    width: .7%;
     background-color: black; 
-    visibility: hidden;
+    
 }
+
